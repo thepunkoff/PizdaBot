@@ -26,3 +26,4 @@ G:\dev\repos\PizdaBot\PizdaBot\PizdaBot\out\ref\PizdaBot.dll
 G:\dev\repos\PizdaBot\PizdaBot\PizdaBot\out\PizdaBot.pdb
 G:\dev\repos\PizdaBot\PizdaBot\PizdaBot\out\Newtonsoft.Json.dll
 G:\dev\repos\PizdaBot\PizdaBot\PizdaBot\out\Telegram.Bot.dll
+G:\dev\repos\PizdaBot\PizdaBot\PizdaBot\bin\Debug\net5.0\token.txt
