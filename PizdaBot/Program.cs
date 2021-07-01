@@ -30,13 +30,16 @@ namespace PizdaBot
                 Console.WriteLine($"New message: {ea.Message.Text ?? "null"}");
                 try
                 {
-                    if (ea.Message.Text.ToLowerInvariant() == "да")
+                    if (ea.Message.Text is null)
+                        return;
+
+                    if (Helper.IsDa(ea.Message.ToString()))
                     {
                         Console.WriteLine("Sending kirkorov");
                         client.SendStickerAsync(ea.Message.Chat, new InputMedia("CAACAgIAAxkBAAMsYMndSbtmS8jFrKeWzcpHj8PCHDwAAgIAA8rM2SfczZz_qtrYGh8E"));
                     }
 
-                    if (ea.Message.Text.ToLowerInvariant() == "нет")
+                    if (Helper.IsNet(ea.Message.ToString()))
                     {
                         Console.WriteLine("Sending blowjob");
                         client.SendTextMessageAsync(ea.Message.Chat, "Минет.");
